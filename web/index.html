@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="AI-Powered Competitive Exam Preparation - TNPSC, SSC, RRB, UPSC, Banking">
+    <meta name="theme-color" content="#1A237E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>ExamAI - Smart Exam Preparation</title>
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Splash -->
+    <div id="splash-screen" class="splash">
+        <div class="splash-content">
+            <div class="splash-logo">🎓</div>
+            <h1 class="splash-title">ExamAI</h1>
+            <p class="splash-subtitle">Smart Competitive Exam Preparation</p>
+            <div class="splash-loader"><div class="loader-bar"><div class="loader-bar-fill"></div></div>
+                <p class="loader-text">Initializing AI Engine...</p></div>
+        </div>
+    </div>
+
+    <!-- Login Screen -->
+    <div id="auth-screen" class="auth-screen hidden"></div>
+
+    <!-- Onboarding -->
+    <div id="onboarding-screen" class="onboarding-screen hidden"></div>
+
+    <!-- Main App -->
+    <div id="app" class="app hidden">
+        <header id="app-header" class="app-header">
+            <button id="back-btn" class="icon-btn hidden" onclick="navigateBack()"><span class="material-icons-round">arrow_back</span></button>
+            <h2 id="page-title" class="page-title">Dashboard</h2>
+            <button id="upload-header-btn" class="icon-btn" onclick="navigateTo('upload')" title="Upload"><span class="material-icons-round">upload_file</span></button>
+            <button id="settings-btn" class="icon-btn" onclick="navigateTo('settings')"><span class="material-icons-round">settings</span></button>
+        </header>
+        <main id="page-container" class="page-container"></main>
+        <nav id="bottom-nav" class="bottom-nav">
+            <button class="nav-item active" data-page="dashboard" onclick="navigateTo('dashboard')"><span class="material-icons-round">home</span><span class="nav-label">Home</span></button>
+            <button class="nav-item" data-page="lessons" onclick="navigateTo('lessons')"><span class="material-icons-round">menu_book</span><span class="nav-label">Learn</span></button>
+            <button class="nav-item nav-fab" data-page="chat" onclick="navigateTo('chat')"><span class="material-icons-round">smart_toy</span></button>
+            <button class="nav-item" data-page="mock-test" onclick="navigateTo('mock-test')"><span class="material-icons-round">quiz</span><span class="nav-label">Tests</span></button>
+            <button class="nav-item" data-page="progress" onclick="navigateTo('progress')"><span class="material-icons-round">bar_chart</span><span class="nav-label">Progress</span></button>
+        </nav>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/database.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/lessons.js"></script>
+    <script src="js/ai-service.js"></script>
+    <script src="js/screens.js"></script>
+    <script src="js/quiz-engine.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

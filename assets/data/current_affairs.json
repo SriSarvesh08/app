@@ -1,0 +1,84 @@
+{
+  "current_affairs": [
+    {
+      "title": "India Successfully Launches Chandrayaan-4",
+      "content": "ISRO has successfully launched the Chandrayaan-4 mission from Satish Dhawan Space Centre in Sriharikota. The mission aims to bring back lunar soil samples from the Moon's south pole, making India only the fourth country to achieve a lunar sample return. The mission uses an advanced lander-ascender architecture and is expected to return samples within 45 days.",
+      "category": "Science",
+      "date": "2026-05-10",
+      "month": "May",
+      "year": 2026
+    },
+    {
+      "title": "Tamil Nadu Government Launches AI Skill Development Program",
+      "content": "The Tamil Nadu government has launched a massive AI and Digital Skills Development Program targeting 5 lakh youth. The program, in collaboration with IIT Madras and leading tech companies, offers free courses in Artificial Intelligence, Machine Learning, and Data Science. Certificates will be provided upon completion, with job placement assistance for top performers.",
+      "category": "Tamil Nadu",
+      "date": "2026-05-08",
+      "month": "May",
+      "year": 2026
+    },
+    {
+      "title": "RBI Maintains Repo Rate at 6.25%",
+      "content": "The Reserve Bank of India's Monetary Policy Committee (MPC) decided to maintain the repo rate at 6.25% in its latest bi-monthly review. The decision aims to balance economic growth with inflation management. GDP growth projection for FY2027 is set at 7.2%, while CPI inflation is expected to remain around 4.5%.",
+      "category": "National",
+      "date": "2026-05-05",
+      "month": "May",
+      "year": 2026
+    },
+    {
+      "title": "India Signs Free Trade Agreement with EU",
+      "content": "India and the European Union have signed a comprehensive Free Trade Agreement (FTA) after years of negotiations. The agreement covers goods, services, and investments, and is expected to boost bilateral trade by 30%. Key sectors benefiting include textiles, IT services, pharmaceuticals, and automotive components.",
+      "category": "International",
+      "date": "2026-04-28",
+      "month": "April",
+      "year": 2026
+    },
+    {
+      "title": "Indian Hockey Team Wins Asian Champions Trophy",
+      "content": "The Indian Men's Hockey Team clinched the Asian Champions Trophy 2026 held in Muscat, Oman, defeating Pakistan 3-1 in the final. Captain Hardik Singh was named Player of the Tournament. This marks India's fifth Asian Champions Trophy title.",
+      "category": "Sports",
+      "date": "2026-04-22",
+      "month": "April",
+      "year": 2026
+    },
+    {
+      "title": "New National Education Policy Implementation Update",
+      "content": "The Ministry of Education announced full implementation of NEP 2020's undergraduate curriculum reform across all central universities from the academic year 2026-27. The four-year undergraduate program with multiple exit options is now mandatory. Academic Bank of Credits (ABC) integration is complete in 850+ institutions.",
+      "category": "National",
+      "date": "2026-04-15",
+      "month": "April",
+      "year": 2026
+    },
+    {
+      "title": "Chennai Metro Phase 2 First Section Opens",
+      "content": "The first section of Chennai Metro Rail Phase 2 connecting Madhavaram to CMBT was inaugurated by the Chief Minister. The 18.5 km stretch features 15 stations and is expected to serve 2 lakh passengers daily. The entire Phase 2 network of 118.9 km is expected to be completed by 2028.",
+      "category": "Tamil Nadu",
+      "date": "2026-04-10",
+      "month": "April",
+      "year": 2026
+    },
+    {
+      "title": "India Becomes World's 3rd Largest Solar Power Producer",
+      "content": "India has surpassed Japan to become the world's third-largest solar power producer with an installed capacity of 120 GW. The country aims to reach 280 GW of solar capacity by 2030 as part of its renewable energy targets. Tamil Nadu ranks third among Indian states in solar power capacity.",
+      "category": "National",
+      "date": "2026-03-25",
+      "month": "March",
+      "year": 2026
+    },
+    {
+      "title": "TNPSC Group 4 Exam 2026 Notification Released",
+      "content": "Tamil Nadu Public Service Commission has released the notification for Combined Civil Services Examination (Group IV) 2026 with 6,318 vacancies across various departments. The exam is scheduled for August 2026. Eligible candidates can apply online at tnpsc.gov.in. Educational qualification required is a pass in SSLC/10th standard.",
+      "category": "Tamil Nadu",
+      "date": "2026-03-18",
+      "month": "March",
+      "year": 2026
+    },
+    {
+      "title": "UN Climate Summit COP31 Key Resolutions",
+      "content": "The COP31 Climate Summit concluded in Sydney, Australia with key resolutions including accelerating the phase-out of fossil fuels, establishing a $200 billion climate adaptation fund for developing nations, and setting mandatory carbon emission reduction targets for 2035. India committed to achieving 65% non-fossil fuel energy capacity by 2032.",
+      "category": "International",
+      "date": "2026-03-10",
+      "month": "March",
+      "year": 2026
+    }
+  ]
+}
