@@ -12,7 +12,7 @@ class TNPSCApp extends ConsumerWidget {
     final isDarkMode = ref.watch(themeProvider);
     
     return MaterialApp(
-      title: 'TNPSC AI Assistant',
+      title: 'examGenious',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,

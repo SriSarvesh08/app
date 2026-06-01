@@ -41,7 +41,7 @@ class NotificationService {
 
     await _plugin.show(
       0,
-      'TNPSC AI Assistant',
+      'examGenious',
       message,
       details,
     );

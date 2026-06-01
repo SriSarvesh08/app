@@ -1,7 +1,7 @@
 class AppConstants {
-  static const String appName = 'TNPSC AI Assistant';
+  static const String appName = 'examGenious';
   static const String appVersion = '1.0.0';
-  static const String appTagline = 'Your Offline AI Exam Coach';
+  static const String appTagline = 'Your Smart Offline Exam Coach';
   static const String dbName = 'tnpsc_ai.db';
   static const int dbVersion = 1;
   static const String modelName = 'gemma-2b-it-q4_k_m.gguf';

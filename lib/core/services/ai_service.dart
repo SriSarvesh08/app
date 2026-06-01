@@ -331,7 +331,7 @@ class AIService {
   String _generalConcept(String prompt, String name) {
     return "🤖 **Hello $name! How can I assist you?**\n\n"
         "You asked: *\"$prompt\"*\n\n"
-        "I am your highly specialized, 100% offline TNPSC AI Assistant. I can dynamically solve mathematical problems, teach reasoning tricks, explain historical topics, or outline study strategies.\n\n"
+        "I am **examGenious**, your highly specialized, 100% offline AI Assistant. I can dynamically solve mathematical problems, teach reasoning tricks, explain historical topics, or outline study strategies.\n\n"
         "**Try asking me math problems directly, such as:**\n"
         "• *'If A does work in 10 days and B in 15 days, how long together?'*\n"
         "• *'What is 35 percent of 1200?'*\n"

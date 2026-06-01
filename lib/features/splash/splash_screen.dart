@@ -259,7 +259,7 @@ class _SplashScreenState extends State<SplashScreen>
                       child: Column(
                         children: [
                           const Text(
-                            'TNPSC AI',
+                            'examGenious',
                             style: TextStyle(
                               fontSize: 36,
                               fontWeight: FontWeight.w700,
@@ -269,7 +269,7 @@ class _SplashScreenState extends State<SplashScreen>
                           ),
                           const SizedBox(height: 8),
                           Text(
-                            'Your Offline AI Exam Coach',
+                            'Your Smart Offline Exam Coach',
                             style: TextStyle(
                               fontSize: 16,
                               color: Colors.white.withOpacity(0.7),

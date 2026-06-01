@@ -107,7 +107,7 @@ class SettingsScreen extends ConsumerWidget {
                 children: [
                   const Text('🎓', style: TextStyle(fontSize: 32)),
                   const SizedBox(height: 8),
-                  Text('TNPSC AI Assistant', style: TextStyle(fontWeight: FontWeight.w600, color: darkMode ? Colors.white : AppColors.textPrimary)),
+                  Text('examGenious', style: TextStyle(fontWeight: FontWeight.w600, color: darkMode ? Colors.white : AppColors.textPrimary)),
                   const SizedBox(height: 4),
                   Text('Made with ❤️ for TNPSC aspirants', style: TextStyle(fontSize: 12, color: darkMode ? Colors.white38 : AppColors.textSecondary)),
                 ],

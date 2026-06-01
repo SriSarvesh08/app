@@ -1,6 +1,6 @@
 {
-  "name": "TNPSC AI Assistant",
-  "short_name": "TNPSC AI",
+  "name": "examGenious",
+  "short_name": "examGenious",
   "description": "Offline AI Assistant for TNPSC & Competitive Exam Preparation",
   "start_url": "index.html",
   "display": "standalone",

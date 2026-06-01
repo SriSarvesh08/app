@@ -20,10 +20,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   final List<_OnboardingPage> _pages = const [
     _OnboardingPage(
       emoji: '🎓',
-      title: 'TNPSC AI Assistant',
-      subtitle: 'Your Personal Exam Coach',
+      title: 'examGenious',
+      subtitle: 'Your Smart Offline Exam Coach',
       description:
-          'Master Aptitude, Reasoning, Verbal Ability, and Current Affairs with AI-powered guidance — completely offline.',
+          'Master Aptitude, Reasoning, Verbal Ability, History, Polity, and Current Affairs with AI-powered guidance — completely offline.',
       gradientColors: [Color(0xFF1A237E), Color(0xFF3949AB)],
     ),
     _OnboardingPage(

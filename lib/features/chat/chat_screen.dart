@@ -76,13 +76,14 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
 
   void _addWelcomeMessage(String name, String group) {
     final welcome = ChatMessage(
-      message: "Hello $name! 👋 I'm your **TNPSC AI Assistant**.\n\n"
+      message: "Hello $name! 👋 I'm **examGenious**, your smart AI exam coach.\n\n"
           "I see you are preparing for **$group**. I can help you with:\n"
           "📊 Aptitude & Shortcuts\n"
           "🧩 Reasoning & Puzzles\n"
           "📝 English & Grammar\n"
           "📰 Current Affairs\n"
-          "🎯 TNPSC Strategy\n\n"
+          "🎯 TNPSC Strategy\n"
+          "🏛️ History, Polity & Geography\n\n"
           "Ask me anything to get started!",
       isUser: false,
     );

@@ -1,8 +1,8 @@
 class Translations {
   static const Map<String, Map<String, String>> _keys = {
     'en': {
-      'app_title': 'TNPSC AI',
-      'tagline': 'Your Offline AI Exam Coach',
+      'app_title': 'examGenious',
+      'tagline': 'Your Smart Offline Exam Coach',
       'ask_ai': 'Ask AI Assistant',
       'quick_actions': 'Quick Actions',
       'aptitude': 'Aptitude & Mental Ability',
@@ -26,8 +26,8 @@ class Translations {
       'group_selection': 'Target Exam',
     },
     'ta': {
-      'app_title': 'டி.என்.பி.எஸ்.சி AI',
-      'tagline': 'உங்களின் ஆஃப்லைன் AI தேர்வு பயிற்சியாளர்',
+      'app_title': 'examGenious',
+      'tagline': 'உங்களின் AI தேர்வு பயிற்சியாளர்',
       'ask_ai': 'AI உதவியாளரிடம் கேளுங்கள்',
       'quick_actions': 'விரைவுச் செயல்கள்',
       'aptitude': 'திறனறிவு மற்றும் மனக்கணக்கு',
