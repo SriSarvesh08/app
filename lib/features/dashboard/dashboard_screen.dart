@@ -1,12 +1,14 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../config/theme/app_colors.dart';
 import '../../config/routes/app_router.dart';
 import '../../core/utils/helpers.dart';
 import '../../core/database/database_helper.dart';
 import '../../core/providers/providers.dart';
 import '../../core/services/streak_service.dart';
+import '../../core/services/update_service.dart';
 import '../../widgets/animated_card.dart';
 import '../../widgets/glassmorphic_container.dart';
 import '../../core/constants/translations.dart';
@@ -29,6 +31,100 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
   void initState() {
     super.initState();
     _loadStats();
+    // Check for update after the first frame so the context is fully ready
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      Future.delayed(const Duration(seconds: 2), _checkForUpdate);
+    });
+  }
+
+  Future<void> _checkForUpdate() async {
+    if (!mounted) return;
+    final update = await UpdateService.instance.checkForUpdate();
+    if (update != null && mounted) {
+      _showUpdateDialog(update);
+    }
+  }
+
+  void _showUpdateDialog(UpdateInfo update) {
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (ctx) => Dialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+        child: Container(
+          padding: const EdgeInsets.all(24),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(24),
+            gradient: const LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [Color(0xFF0D1117), Color(0xFF1A237E)],
+            ),
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Text('🚀', style: TextStyle(fontSize: 48)),
+              const SizedBox(height: 12),
+              const Text(
+                'New Update Available!',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                'v${update.currentVersion} → v${update.latestVersion}',
+                style: const TextStyle(color: AppColors.accentGold, fontWeight: FontWeight.w600),
+              ),
+              const SizedBox(height: 16),
+              if (update.releaseNotes.isNotEmpty)
+                Container(
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.08),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Text(
+                    update.releaseNotes,
+                    style: const TextStyle(color: Colors.white70, fontSize: 13, height: 1.5),
+                    maxLines: 5,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+              const SizedBox(height: 20),
+              Row(
+                children: [
+                  Expanded(
+                    child: TextButton(
+                      onPressed: () => Navigator.pop(ctx),
+                      child: const Text('Later', style: TextStyle(color: Colors.white54)),
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    flex: 2,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: AppColors.accentGold,
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                      ),
+                      onPressed: () async {
+                        Navigator.pop(ctx);
+                        final uri = Uri.parse(update.downloadUrl);
+                        if (await canLaunchUrl(uri)) {
+                          await launchUrl(uri, mode: LaunchMode.externalApplication);
+                        }
+                      },
+                      child: const Text('Update Now', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 
   Future<void> _loadStats() async {

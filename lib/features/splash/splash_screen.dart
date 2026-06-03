@@ -66,8 +66,6 @@ class _SplashScreenState extends State<SplashScreen>
     if (mounted) {
       if (isLoggedIn) {
         Navigator.pushReplacementNamed(context, AppRouter.dashboard);
-        // Check for updates after routing (non-blocking)
-        Future.delayed(const Duration(seconds: 2), () => _checkForUpdate());
       } else if (onboardingDone) {
         Navigator.pushReplacementNamed(context, AppRouter.login);
       } else {
